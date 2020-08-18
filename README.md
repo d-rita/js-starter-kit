@@ -1,4 +1,4 @@
-Setting up a JS development environment:
+# Setting up a JS development environment:
 A good starter kit for all JS projects. Consider it the chores to do before finally starting the project features. They help set a standard to follow throughout the project.
 
 1. Editors: set up a `.editorconfig` file specify coding styles to be enforced in the project despite the kind of editor chosen. Install the editorconfig plugin if your editor requires it. 
@@ -16,4 +16,7 @@ Node's package manifest is package.json which stores a list of npm packages in u
 
 7. Linting: using `eslint` to enforce consistency and avoid mistakes. Configuration done in a separate file, i.e `eslintrc.json`. Add a wrapper module `eslint-watch` to watch files. 
 
-8. Testing and Continuous Integration: 
+8. Testing and Continuous Integration: Unit test configuration using the `mocha` testing framework and the `chai` assertion library. Tests are alongside their respective files as opposed to creating a centralized tests folder.
+
+A case for CI: it catches mistakes in code quickly by notifying you when the build is broken. Choice of CI server is `Travis` for Linux and Mac environments. As well as `Appveyor` for Windows environments
+
